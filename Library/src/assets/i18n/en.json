@@ -1,0 +1,95 @@
+{
+  "Template": {
+    "ID": "ID",
+    "Title": "Title",
+    "Author": "Author",
+    "Status": "Status",
+    "StartData": "Start Data",
+    "EndData": "End Data",
+    "Actions": "Actions",
+    "Cancel": "Cancel",
+    "Close": "Close",
+    "Rentals": "Rentals",
+    "Activate": "Activate",
+    "Books": "Books",
+    "Available": "Available",
+    "Unavailable": "Unavailable",
+    "Canceled": "Canceled",
+    "Active": "Active",
+    "Pending": "Pending",
+    "Completed": "Completed",
+    "AddBook": "Add Book",
+    "ImageUrl": "Image Url",
+    "Description": "Description",
+    "Add": "Add",
+    "ReserveBook": "Reserve Book",
+    "Success": {
+      "Success": "Success",
+      "Login": "LoginPomyślnie zalogowano",
+      "Register": "RegisterPomyślnie zarejestrowano",
+      "DeleteBook": "DeleteBookPomyślnie usunięto książkę",
+      "AddBook": "AddBookPomyślnie dodano książkę",
+      "ReserveBook": "ReserveBookPomyślnie dodano rezerwację",
+      "ActiveRental": "ActiveRentalPomyślnie rozpoczęto wypożyczenie",
+      "CloseRental": "CloseRentalPomyślnie zakończono wypożyczenie"
+    },
+    "Error": "Error",
+    "Header": {
+      "Home": "Home",
+      "Logout": "Logout",
+      "Search": "Search",
+      "Language": "Language",
+      "Polish": "Polish",
+      "English": "English",
+      "Panel": "Panel",
+      "Rentals": "Rentals",
+      "Books": "Books",
+      "ListBooks": "List Books",
+      "AddBook": "Add Book"
+    },
+    "Authentication": {
+      "SignIn": "Sign In",
+      "SignUp": "Sign Up",
+      "EmailAddress": "Email Address",
+      "Password": "Password",
+      "ConfirmPassword": "Confirm Password",
+      "FirstName": "First Name",
+      "LastName": "Last Name",
+      "BackToLogin": "Back To Login",
+      "CreateAccount": "Create Account"
+    }
+  },
+  "ApiError": {
+    "Common": {
+      "InternalError": "Internal Error",
+      "NotFound": "Not Found",
+      "Forbidden": "Forbidden",
+      "Unauthorized": "Unauthorized"
+    },
+    "User": {
+      "InvalidEmail": "Invalid Email",
+      "InvalidPassword": "Invalid Password",
+      "InvalidFirstName": "Invalid First Name",
+      "InvalidLastName": "Invalid Last Name"
+    },
+    "Register": {
+      "EmailInUse": "Email In Use"
+    },
+    "Login": {
+      "InvalidCredentials": "Invalid Credentials"
+    },
+    "Book": {
+      "InvalidTitle": "Invalid Title",
+      "InvalidAuthor": "Invalid Author",
+      "InvalidDescription": "Invalid Description",
+      "InvalidImageUrl": "Invalid Image Url"
+    },
+    "Rental": {
+      "BookInUse": "Book In Use",
+      "BookIsNull": "This Book Does Not Exist",
+      "RentalIsNotPending": "Rental Is Not Pending",
+      "RentalIsCompleted": "Rental Is Completed",
+      "RentalIsCanceled": "Rental Is Canceled"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.book-status {
+  border-radius: 2px;
+  padding: .25em .5rem;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+
+  &.status-Available {
+    background-color: #C8E6C9;
+    color: #256029;
+  }
+
+  &.status-Unavailable {
+    background-color: #FFCDD2;
+    color: #C63737;
+  }
+
+  &.status-Pending {
+    background-color: #B3E5FC;
+    color: #23547B;
+  }
+
+  &.status-Active {
+    background-color: #ECCFFF;
+    color: #694382;
+  }
+}

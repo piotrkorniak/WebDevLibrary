@@ -1,0 +1,17 @@
+<p-dataView
+  [value]="books"
+  [paginator]="true"
+  [rows]="9"
+  layout="grid">
+  <ng-template let-book pTemplate="gridItem">
+    <div class="p-col-12 p-md-4" routerLink="{{book.id}}">
+      <div class="product-grid-item">
+        <div class="product-grid-item-content">
+          <div class="product-name">{{book.title}}</div>
+          <div class="product-description">{{book.author}}</div>
+          <img src="{{book.imageUrl}}" alt="{{book.title}}">
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-dataView>

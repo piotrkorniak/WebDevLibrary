@@ -1,0 +1,57 @@
+<div class="container ">
+  <h1>{{'Template.AddBook' | translate}}</h1>
+  <form
+    [formGroup]="addBookForm"
+    (ngSubmit)="onSubmit()"
+    class="p-d-flex p-flex-column p-ai-center">
+    <div class="p-field p-grid">
+      <label for="title">{{'Template.Title' | translate}}: </label>
+      <div class="p-col">
+        <input
+          id="title"
+          type="text"
+          name="title"
+          pInputText
+          formControlName="title">
+      </div>
+    </div>
+    <div class="p-field p-grid">
+      <label for="author">{{'Template.Author' | translate}}: </label>
+      <div class="p-col">
+        <input
+          id="author"
+          type="text"
+          name="author"
+          pInputText
+          formControlName="author">
+      </div>
+    </div>
+    <div class="p-field p-grid">
+      <label for="image-url">{{'Template.ImageUrl' | translate}}: </label>
+      <div class="p-col">
+        <input
+          id="image-url"
+          type="text"
+          name="image-url"
+          pInputText
+          formControlName="imageUrl">
+      </div>
+    </div>
+    <div class="p-field p-grid p-ai-start">
+      <label for="description" class="p-ver">{{'Template.Description' | translate}}: </label>
+      <div class="p-col">
+        <textarea
+          [rows]="5"
+          [cols]="50"
+          pInputTextarea
+          autoResize="autoResize"
+          id="description"
+          name="description"
+          formControlName="description"
+          maxlength="1000"
+        ></textarea>
+      </div>
+    </div>
+    <button pButton type="submit" label="{{'Template.Add' | translate}}"></button>
+  </form>
+</div>

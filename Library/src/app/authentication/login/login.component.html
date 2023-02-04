@@ -1,0 +1,43 @@
+<h1>{{'Template.Authentication.SignIn' | translate}}</h1>
+<form
+  #loginForm="ngForm"
+  (ngSubmit)="onLogin(loginForm)"
+  class="p-d-flex p-flex-column p-ai-center">
+  <div class="p-field p-grid">
+    <label for="email">
+      {{'Template.Authentication.EmailAddress' | translate}}:
+    </label>
+    <div class="p-col">
+      <input
+        id="email"
+        type="email"
+        name="email"
+        pInputText
+        ngModel
+        required
+        email
+        maxlength="100">
+    </div>
+  </div>
+  <div class="p-field p-grid">
+    <label for="password">
+      {{'Template.Authentication.Password' | translate}}:
+    </label>
+    <div class="p-col">
+      <input
+        id="password"
+        type="password"
+        name="password"
+        pInputText
+        ngModel
+        required
+        minlength="8">
+    </div>
+  </div>
+  <a routerLink="/authentication/register">
+    {{'Template.Authentication.CreateAccount' | translate}}
+  </a>
+  <button pButton>
+    {{'Template.Authentication.SignIn' | translate}}
+  </button>
+</form>

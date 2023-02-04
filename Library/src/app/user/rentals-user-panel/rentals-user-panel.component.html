@@ -1,0 +1,49 @@
+<div class="card">
+  <h1>{{'Template.Rentals'  | translate}}</h1>
+  <p-table [value]="rentals">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>{{'Template.ID'  | translate}}</th>
+        <th>{{'Template.Title'  | translate}}</th>
+        <th>{{'Template.Author'  | translate}}</th>
+        <th>{{'Template.Status'  | translate}}</th>
+        <th>{{'Template.StartData'  | translate}}</th>
+        <th>{{'Template.EndData'  | translate}}</th>
+        <th>{{'Template.Actions'  | translate}}</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rental>
+      <tr>
+        <td>
+          {{rental.id}}
+        </td>
+        <td>
+          <a [routerLink]="['/books', rental.book.id]">{{rental.book.title}}</a>
+        </td>
+        <td>
+          {{rental.book.author}}
+        </td>
+        <td>
+          <span [class]="'rental-status status-' + rental.status">{{'Template.' + rental.status | translate}}</span>
+
+        </td>
+        <td>
+          {{rental.startDate | date : 'short'}}
+        </td>
+        <td>
+          {{rental.endDate ? (rental.endDate | date : 'short') : '-'}}
+        </td>
+        <td class="p-d-flex p-flex-column">
+          <button
+            pButton
+            pRipple
+            type="button"
+            class="p-button-danger"
+            [disabled]="rental.status !== rentalStatus.Pending"
+            (click)="onCloseRental(rental)"
+          >{{'Template.Cancel'  | translate}}</button>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

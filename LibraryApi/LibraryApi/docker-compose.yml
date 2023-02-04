@@ -1,0 +1,7 @@
+services:
+  api:
+    build:
+      context: .
+    image: library-api
+    ports:
+      - 5001:5001

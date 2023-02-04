@@ -1,0 +1,95 @@
+{
+  "Template": {
+    "ID": "ID",
+    "Title": "Tytuł",
+    "Author": "Autor",
+    "Status": "Status",
+    "StartData": "Data rozpoczęcia",
+    "EndData": "Data zakończenia",
+    "Actions": "Akcje",
+    "Cancel": "Anuluj",
+    "Close": "Zamknij",
+    "Rentals": "Wypożyczenia",
+    "Activate": "Aktywuj",
+    "Books": "Książki",
+    "Available": "Dostępna",
+    "Unavailable": "Niedostępna",
+    "Canceled": "Anulowane",
+    "Active": "Aktywne",
+    "Pending": "Oczekujące",
+    "Completed": "Zakończone",
+    "AddBook": "Dodaj książkę",
+    "ImageUrl": "Adres obrazka",
+    "Description": "Opis",
+    "Add": "Dodaj",
+    "ReserveBook": "Zarezerwuj książkę",
+    "Success": {
+      "Success": "Sukces",
+      "Login": "Pomyślnie zalogowano",
+      "Register": "Pomyślnie zarejestrowano",
+      "DeleteBook": "Pomyślnie usunięto książkę",
+      "AddBook": "Pomyślnie dodano książkę",
+      "ReserveBook": "Pomyślnie dodano rezerwację",
+      "ActiveRental": "Pomyślnie rozpoczęto wypożyczenie",
+      "CloseRental": "Pomyślnie zakończono wypożyczenie"
+    },
+    "Error": "Błąd",
+    "Header": {
+      "Home": "Strona główna",
+      "Logout": "Wyloguj",
+      "Search": "Wyszukaj",
+      "Language": "Język",
+      "Polish": "Polski",
+      "English": "Angielski",
+      "Panel": "Panel",
+      "Rentals": "Wypożyczenia",
+      "Books": "Książki",
+      "ListBooks": "Lista",
+      "AddBook": "Dodaj"
+    },
+    "Authentication": {
+      "SignIn": "Zaloguj się",
+      "SignUp": "Zarejestruj się",
+      "EmailAddress": "Adres email",
+      "Password": "Hasło",
+      "ConfirmPassword": "Potwierdź hasło",
+      "FirstName": "Imię",
+      "LastName": "Nazwisko",
+      "BackToLogin": "Powrót do logowania",
+      "CreateAccount": "Stwórz konto"
+    }
+  },
+  "ApiError": {
+    "Common": {
+      "InternalError": "Błąd serwera",
+      "NotFound": "Nie znaleziono zasobu",
+      "Forbidden": "Dostęp jest zabroniony",
+      "Unauthorized": "Błąd poświadczenia"
+    },
+    "User": {
+      "InvalidEmail": "Niepoprawny adres email",
+      "InvalidPassword": "Niepoprawne hasło",
+      "InvalidFirstName": "Niepoprawne imię",
+      "InvalidLastName": "Niepoprawne nazwisko"
+    },
+    "Register": {
+      "EmailInUse": "Adres email jest zajęty"
+    },
+    "Login": {
+      "InvalidCredentials": "Niepoprawne dane logowania"
+    },
+    "Book": {
+      "InvalidTitle": "Niepoprawny tytuł",
+      "InvalidAuthor": "Niepoprawny autor",
+      "InvalidDescription": "Niepoprawny opis",
+      "InvalidImageUrl": "Książka była wypożyczana"
+    },
+    "Rental": {
+      "BookInUse": "Książka jest już zajęta",
+      "BookIsNull": "Książka nie istnieje",
+      "RentalIsNotPending": "Wypożyczenie nie ma statusu rezerwacji",
+      "RentalIsCompleted": "Wypożyczenie zostało już zakończone",
+      "RentalIsCanceled": "Wypożyczenie zostało już anulowane"
+    }
+  }
+}
